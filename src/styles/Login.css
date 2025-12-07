@@ -1,0 +1,159 @@
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(90deg, #2049A1 0%, #82A3EA 51%, #0B1767 100%);
+  position: relative;
+  padding: 2rem;
+}
+
+/* Back Button */
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: opacity 0.3s;
+}
+
+.back-btn:hover {
+  opacity: 0.8;
+}
+
+.back-btn .arrow {
+  font-size: 1.25rem;
+}
+
+/* Container */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 6rem);
+  gap: 2rem;
+}
+
+@media (max-width: 968px) {
+  .login-container {
+    flex-direction: column;
+  }
+}
+
+/* Mascot */
+.mascot-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+}
+
+.mascot-img {
+  width: 120%;
+  z-index: 1000;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 968px) {
+  .mascot-wrapper {
+    max-width: 280px;
+  }
+}
+
+/* Login Card */
+.login-card {
+  box-shadow: inset 0 8px 20px rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.692);
+  backdrop-filter: blur(12px);         
+  -webkit-backdrop-filter: blur(12px);  
+  border-radius: 1.5rem;
+  padding: 3rem;
+  width: 100%;
+  max-width: 520px;
+  
+}
+
+.login-card h1 {
+  font-size: 1.75rem;
+  background: linear-gradient(180deg, #4594F7 0%, #000000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Firefox */
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Login Options */
+.login-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none; 
+  box-sizing: border-box;
+  border: 1.5px solid transparent;
+}
+
+.login-btn.hcmut {
+  background: #fff;
+  border: 1px solid #0B1767;
+  color: #0B1767;
+}
+
+.login-btn.hcmut:hover {
+  background: #f0f4fa;
+  border: 2px solid #0B1767;
+}
+
+.login-btn.admin {
+  background: #fff;
+  border: 2px solid #c5d4e8;
+  color: #1e3a6e;
+}
+
+.login-btn.admin:hover {
+  background: #f0f4fa;
+  border-color: #0B1767;
+}
+
+.btn-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Forgot Link */
+.forgot-link {
+  display: block;
+  text-align: right;
+  color: #0B1767;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.forgot-link:hover {
+  color: #0B1767;
+  text-decoration: underline;
+}
